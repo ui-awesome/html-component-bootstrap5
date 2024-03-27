@@ -9,6 +9,13 @@ namespace UIAwesome\Html\Component\Bootstrap5\Cookbook\Toggle;
  */
 final class Alert
 {
+    /**
+     * Define the toggle alert definition.
+     *
+     * @return array The toggle alert definition.
+     *
+     * @psalm-return array<string, mixed> The toggle alert definition.
+     */
     public static function definition(): array
     {
         return [

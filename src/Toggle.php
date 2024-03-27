@@ -27,7 +27,6 @@ final class Toggle extends AbstractToggle
      *
      * @param string $definition The toggle definition.
      * Available definitions: 'alert', 'menu', 'menu-dropdown', 'selector-language', 'selector-theme'.
-     * @param string $type The toggle type.
      *
      * @return self A new instance or clone of the current object with the applied definition.
      */

@@ -13,6 +13,13 @@ namespace UIAwesome\Html\Component\Bootstrap5\Cookbook\Breadcrumb;
  */
 final class Defaults
 {
+    /**
+     * Define the breadcrumb definition.
+     *
+     * @return array The breadcrumb definition.
+     *
+     * @psalm-return array<string, mixed> The breadcrumb definition.
+     */
     public static function definition(): array
     {
         return [

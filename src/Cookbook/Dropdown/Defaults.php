@@ -15,6 +15,13 @@ use UIAwesome\Html\Component\Bootstrap5\Toggle;
  */
 final class Defaults
 {
+    /**
+     * Define the dropdown definition.
+     *
+     * @return array The dropdown definition.
+     *
+     * @psalm-return array<string, mixed> The dropdown definition.
+     */
     public static function definition(): array
     {
         return [

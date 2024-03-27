@@ -11,6 +11,13 @@ use UIAwesome\Html\Graphic\Svg;
  */
 final class SelectorTheme
 {
+    /**
+     * Define the toggle selector theme definition.
+     *
+     * @return array The toggle selector theme definition.
+     *
+     * @psalm-return array<string, mixed> The toggle selector theme definition.
+     */
     public static function definition(): array
     {
         return [

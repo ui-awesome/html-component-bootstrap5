@@ -9,6 +9,13 @@ namespace UIAwesome\Html\Component\Bootstrap5\Cookbook\Toggle;
  */
 final class Dropdown
 {
+    /**
+     * Define the toggle dropdown definition.
+     *
+     * @return array The toggle dropdown definition.
+     *
+     * @psalm-return array<string, mixed> The toggle dropdown definition.
+     */
     public static function definition(): array
     {
         return [

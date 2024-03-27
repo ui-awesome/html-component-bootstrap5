@@ -15,6 +15,13 @@ use UIAwesome\Html\Component\Bootstrap5\Toggle;
  */
 final class Defaults
 {
+    /**
+     * Define the navbar definition.
+     *
+     * @return array The navbar definition.
+     *
+     * @psalm-return array<string, mixed> The navbar definition.
+     */
     public static function definition(): array
     {
         return [
