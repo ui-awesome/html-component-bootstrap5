@@ -8,30 +8,26 @@ use PHPForge\Support\Assert;
 use UIAwesome\Html\Component\Bootstrap5\{Dropdown, Item, Menu, NavBar};
 
 /**
- * Navigation bar built dropdown with the utility classes from Bootstrap.
- *
- * Here’s what you need to know about the supported content for the navbar.
- *
- * @link https://getbootstrap.com/docs/5.3/components/navbar/#supported-content
+ * Navigation bar built dropdown with the utility classes from Bootstrap on the right.
  *
  * @psalm-suppress PropertyNotSetInConstructor
  */
-final class DefaultWithDropdownTest extends \PHPUnit\Framework\TestCase
+final class AlignRightTest extends \PHPUnit\Framework\TestCase
 {
     public function testRender(): void
     {
         Assert::equalsWithoutLE(
             <<<HTML
             <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
+            <div class="container">
             <a class="navbar-brand" href="#">
             Navbar
             </a>
             <button class="navbar-toggler" type="button" aria-expanded="false" aria-label="Toggle navigation" data-bs-toggle="collapse" aria-controls="menu_1" data-bs-target="#menu_1">
             <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="menu_1">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <div class="collapse justify-content-end navbar-collapse" id="menu_1">
+            <ul class="navbar-nav">
             <li class="nav-item">
             <a class="nav-link active" href="/home" aria-current="page">Home</a>
             </li>
@@ -65,7 +61,7 @@ final class DefaultWithDropdownTest extends \PHPUnit\Framework\TestCase
             NavBar::widget()
                 ->brandLink('#')
                 ->brandText('Navbar')
-                ->definition('default')
+                ->definition('align-right')
                 ->menu(
                     Menu::widget()
                         ->currentPath('/home')
