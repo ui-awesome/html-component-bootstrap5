@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace UIAwesome\Html\Component\Bootstrap5\NavBar;
+namespace UIAwesome\Html\Component\Bootstrap5\Tests\NavBar;
 
 use PHPForge\Support\Assert;
 use UIAwesome\Html\Component\Bootstrap5\{Item, Menu, NavBar};
@@ -49,6 +49,7 @@ final class DefaultTest extends \PHPUnit\Framework\TestCase
             NavBar::widget()
                 ->brandLink('#')
                 ->brandText('Navbar')
+                ->definition('default')
                 ->menu(
                     Menu::widget()
                         ->currentPath('/home')
