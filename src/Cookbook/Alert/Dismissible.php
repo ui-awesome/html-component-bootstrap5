@@ -33,7 +33,7 @@ final class Dismissible
     {
         return [
             'class()' => [CssClass::render($type, self::BASE_CLASS, self::TYPE_ALERTS)],
-            'toggle()' => [Toggle::widget()->definition('alert')]
+            'toggle()' => [Toggle::widget()->definition('alert')],
         ];
     }
 }

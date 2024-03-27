@@ -28,7 +28,7 @@ final class Defaults
             'containerClass()' => ['dropdown'],
             'linkClass()' => ['dropdown-item'],
             'listClass()' => ['dropdown-menu'],
-            'toggle()' => [Toggle::widget()->definition('dropdown')]
+            'toggle()' => [Toggle::widget()->definition('dropdown')],
         ];
     }
 }
