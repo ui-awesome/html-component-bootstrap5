@@ -13,6 +13,13 @@ use UIAwesome\Html\Component\Bootstrap5\Toggle;
  */
 final class AlignRight
 {
+    /**
+     * Define the navbar with menu items on the right definition.
+     *
+     * @return array The navbar with menu items on the right definition.
+     *
+     * @psalm-return array<string, mixed> The navbar with menu items on the right definition.
+     */
     public static function definition(): array
     {
         return [
