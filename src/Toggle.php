@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace UIAwesome\Html\Component\Bootstrap5;
 
-use PHPForge\Widget\Factory\SimpleFactory;
 use UIAwesome\Html\{
     Component\Bootstrap5\Cookbook\Toggle\Alert,
     Component\Bootstrap5\Cookbook\Toggle\Dropdown,
@@ -15,39 +14,28 @@ use UIAwesome\Html\{
     Core\Component\AbstractToggle
 };
 
-use function sprintf;
-
 /**
  * The `Toggle` component is a simple `HTML` component that can be used to create a toggle button.
  */
 final class Toggle extends AbstractToggle
 {
     /**
-     * Define the toggle definition.
+     * The cookbook definitions for the toggle component.
      *
-     * @param string $definition The toggle definition.
-     * Available definitions: 'alert', 'menu', 'menu-dropdown', 'selector-language', 'selector-theme'.
+     * @param string $option The option to load the cookbook for.
+     * Available definitions: 'alert', 'dropdown', 'menu', 'menu-dropdown', 'selector-language', 'selector-theme'.
      *
-     * @return self A new instance or clone of the current object with the applied definition.
+     * @return array The toggle cookbook definitions.
      */
-    public function definition(string $definition): self
+    protected function getCookbooks(string $option): array
     {
-        $definition = match ($definition) {
+        return [
             'alert' => Alert::definition(),
             'dropdown' => Dropdown::definition(),
             'menu' => Menu::definition(),
             'menu-dropdown' => MenuDropdown::definition(),
             'selector-language' => SelectorLanguage::definition(),
             'selector-theme' => SelectorTheme::definition(),
-            default => throw new \InvalidArgumentException(
-                sprintf(
-                    'Invalid definition: "%s". Available definitions: ' .
-                    '"alert", "dropdown", "menu", "menu-dropdown", "selector-language", "selector-theme".',
-                    $definition
-                )
-            ),
-        };
-
-        return SimpleFactory::configure($this, $definition);
+        ];
     }
 }

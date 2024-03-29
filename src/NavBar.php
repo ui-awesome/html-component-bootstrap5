@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace UIAwesome\Html\Component\Bootstrap5;
 
-use PHPForge\Widget\Factory\SimpleFactory;
 use UIAwesome\Html\{
     Component\Bootstrap5\Cookbook\NavBar\AlignRight,
     Component\Bootstrap5\Cookbook\NavBar\Defaults,
@@ -19,25 +18,18 @@ use UIAwesome\Html\{
 final class NavBar extends AbstractNavBar
 {
     /**
-     * Define the navbar definition.
+     * The cookbook definitions for the navbar component.
      *
-     * @param string $definition The navbar definition. Available definitions: 'default', 'align-right'.
+     * @param string $option The option to load the cookbook for.
+     * Available definitions: 'default', 'align-right'.
      *
-     * @return self A new instance or clone of the current object with the applied definition.
+     * @return array The navbar cookbook definitions.
      */
-    public function definition(string $definition): self
+    protected function getCookbooks(string $option): array
     {
-        $definition = match ($definition) {
+        return [
             'default' => Defaults::definition(),
             'align-right' => AlignRight::definition(),
-            default => throw new \InvalidArgumentException(
-                sprintf(
-                    'Invalid definition: "%s". Available definitions: "default", "align-right".',
-                    $definition
-                )
-            ),
-        };
-
-        return SimpleFactory::configure($this, $definition);
+        ];
     }
 }

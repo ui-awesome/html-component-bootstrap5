@@ -42,7 +42,7 @@ final class DefaultTest extends \PHPUnit\Framework\TestCase
             </div>
             HTML,
             Dropdown::widget()
-                ->definition('default')
+                ->cookbook('default')
                 ->id('dropdown')
                 ->items(
                     Item::widget()->label('Action')->link('#'),

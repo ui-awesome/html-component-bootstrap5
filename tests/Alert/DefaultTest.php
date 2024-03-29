@@ -29,7 +29,7 @@ final class DefaultTest extends \PHPUnit\Framework\TestCase
             HTML,
             Alert::widget()
                 ->content('A simple danger alert—check it out!')
-                ->definition('default', 'danger')
+                ->cookbook('default', 'danger')
                 ->id('alert_658fec01ac6cf')
                 ->render()
         );
@@ -45,7 +45,7 @@ final class DefaultTest extends \PHPUnit\Framework\TestCase
             HTML,
             Alert::widget()
                 ->content('A simple dark alert—check it out!')
-                ->definition('default', 'dark')
+                ->cookbook('default', 'dark')
                 ->id('alert_658fec01ac6cf')
                 ->render()
         );
@@ -61,7 +61,7 @@ final class DefaultTest extends \PHPUnit\Framework\TestCase
             HTML,
             Alert::widget()
                 ->content('A simple info alert—check it out!')
-                ->definition('default', 'info')
+                ->cookbook('default', 'info')
                 ->id('alert_658fec01ac6cf')
                 ->render()
         );
@@ -77,7 +77,7 @@ final class DefaultTest extends \PHPUnit\Framework\TestCase
             HTML,
             Alert::widget()
                 ->content('A simple light alert—check it out!')
-                ->definition('default', 'light')
+                ->cookbook('default', 'light')
                 ->id('alert_658fec01ac6cf')
                 ->render()
         );
@@ -93,7 +93,7 @@ final class DefaultTest extends \PHPUnit\Framework\TestCase
             HTML,
             Alert::widget()
                 ->content('A simple primary alert—check it out!')
-                ->definition('default', 'primary')
+                ->cookbook('default', 'primary')
                 ->id('alert_658fec01ac6cf')
                 ->render()
         );
@@ -109,7 +109,7 @@ final class DefaultTest extends \PHPUnit\Framework\TestCase
             HTML,
             Alert::widget()
                 ->content('A simple secondary alert—check it out!')
-                ->definition('default', 'secondary')
+                ->cookbook('default', 'secondary')
                 ->id('alert_658fec01ac6cf')
                 ->render()
         );
@@ -125,7 +125,7 @@ final class DefaultTest extends \PHPUnit\Framework\TestCase
             HTML,
             Alert::widget()
                 ->content('A simple success alert—check it out!')
-                ->definition('default', 'success')
+                ->cookbook('default', 'success')
                 ->id('alert_658fec01ac6cf')
                 ->render()
         );
@@ -141,7 +141,7 @@ final class DefaultTest extends \PHPUnit\Framework\TestCase
             HTML,
             Alert::widget()
                 ->content('A simple warning alert—check it out!')
-                ->definition('default', 'warning')
+                ->cookbook('default', 'warning')
                 ->id('alert_658fec01ac6cf')
                 ->render()
         );

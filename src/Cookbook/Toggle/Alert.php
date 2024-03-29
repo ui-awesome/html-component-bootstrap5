@@ -13,8 +13,6 @@ final class Alert
      * Define the toggle alert definition.
      *
      * @return array The toggle alert definition.
-     *
-     * @psalm-return array<string, mixed> The toggle alert definition.
      */
     public static function definition(): array
     {

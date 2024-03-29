@@ -13,8 +13,6 @@ final class SelectorLanguage
      * Define the toggle selector language definition.
      *
      * @return array The toggle selector language definition.
-     *
-     * @psalm-return array<string, mixed> The toggle selector language definition.
      */
     public static function definition(): array
     {

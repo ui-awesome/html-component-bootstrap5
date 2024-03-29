@@ -17,7 +17,7 @@ final class MenuDropdownTest extends \PHPUnit\Framework\TestCase
             Dropdown
             </a>
             HTML,
-            Toggle::widget()->definition('menu-dropdown')->render()
+            Toggle::widget()->cookbook('menu-dropdown')->render()
         );
     }
 }

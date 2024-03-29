@@ -19,8 +19,6 @@ final class Language
      * Define the dropdown selection language definition.
      *
      * @return array The dropdown definition.
-     *
-     * @psalm-return array<string, mixed> The dropdown definition.
      */
     public static function definition(): array
     {
@@ -29,7 +27,7 @@ final class Language
             'linkActiveClass()' => ['active'],
             'linkClass()' => ['dropdown-item d-flex align-items-center'],
             'listClass()' => ['dropdown-menu dropdown-menu-end shadow'],
-            'toggle()' => [Toggle::widget()->definition('selector-language')],
+            'toggle()' => [Toggle::widget()->cookbook('selector-language')],
         ];
     }
 }

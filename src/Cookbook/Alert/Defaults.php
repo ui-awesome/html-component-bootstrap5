@@ -26,8 +26,6 @@ final class Defaults
      * Available types: 'danger', 'dark', 'info', 'light', 'primary', 'secondary', 'success', 'warning'.
      *
      * @return array The alert definition.
-     *
-     * @psalm-return array<string, mixed> The alert definition.
      */
     public static function definition(string $type): array
     {
