@@ -19,26 +19,18 @@ use UIAwesome\Html\{
 final class Dropdown extends AbstractDropdown
 {
     /**
-     * Define the drodpown definition.
+     * The cookbook definitions for the dropdown component.
      *
-     * @param string $definition The dropdown definition.
-     * Available definitions: 'default'.
+     * @param string $option The option to load the cookbook for.
+     * Available definitions: 'default', 'language'.
      *
-     * @return self A new instance or clone of the current object with the applied definition.
+     * @return array The dropdown cookbook definitions.
      */
-    public function definition(string $definition): self
+    protected function getCookbooks(string $option): array
     {
-        $definition = match ($definition) {
+        return [
             'default' => Defaults::definition(),
             'language' => Language::definition(),
-            default => throw new \InvalidArgumentException(
-                sprintf(
-                    'Invalid definition: "%s". Available definitions: "default", "language".',
-                    $definition
-                )
-            ),
-        };
-
-        return SimpleFactory::configure($this, $definition);
+        ];
     }
 }

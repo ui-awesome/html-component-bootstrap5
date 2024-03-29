@@ -45,7 +45,7 @@ final class SelectorLanguageTest extends \PHPUnit\Framework\TestCase
             </div>
             HTML,
             Dropdown::widget()
-                ->definition('language')
+                ->cookbook('language')
                 ->id('selector-language')
                 ->items(
                     Item::widget()->label('Deutsch')->link('/language/de'),

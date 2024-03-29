@@ -61,7 +61,7 @@ final class AlignRightTest extends \PHPUnit\Framework\TestCase
             NavBar::widget()
                 ->brandLink('#')
                 ->brandText('Navbar')
-                ->definition('align-right')
+                ->cookbook('align-right')
                 ->menu(
                     Menu::widget()
                         ->currentPath('/home')

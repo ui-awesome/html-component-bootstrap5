@@ -15,7 +15,7 @@ final class AlertTest extends \PHPUnit\Framework\TestCase
             <<<HTML
             <button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="alert"></button>
             HTML,
-            Toggle::widget()->definition('alert')->render()
+            Toggle::widget()->cookbook('alert')->render()
         );
     }
 }

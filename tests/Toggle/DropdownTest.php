@@ -17,7 +17,7 @@ final class DropdownTest extends \PHPUnit\Framework\TestCase
             Dropdown button
             </button>
             HTML,
-            Toggle::widget()->definition('dropdown')->render()
+            Toggle::widget()->cookbook('dropdown')->render()
         );
     }
 }

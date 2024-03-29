@@ -12,9 +12,9 @@ final class ExceptionTest extends \PHPUnit\Framework\TestCase
     {
         $this->expectException(\InvalidArgumentException::class);
         $this->expectExceptionMessage(
-            'Invalid definition: "noexist". Available definitions: "default", "dismissible".'
+            'Invalid value: "type". Available values: "danger", "dark", "info", "light", "primary", "secondary", "success", "warning".'
         );
 
-        Alert::widget()->definition('noexist', '');
+        Alert::widget()->cookbook('default', 'type');
     }
 }

@@ -49,7 +49,7 @@ final class DefaultTest extends \PHPUnit\Framework\TestCase
             NavBar::widget()
                 ->brandLink('#')
                 ->brandText('Navbar')
-                ->definition('default')
+                ->cookbook('default')
                 ->menu(
                     Menu::widget()
                         ->currentPath('/home')

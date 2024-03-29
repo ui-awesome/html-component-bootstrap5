@@ -37,6 +37,7 @@ final class DividerTest extends \PHPUnit\Framework\TestCase
             </nav>
             HTML,
             Breadcrumb::widget()
+                ->cookbook('default')
                 ->currentPath('/data')
                 ->id('breadcrumb_658fec01ac6cf')
                 ->items(

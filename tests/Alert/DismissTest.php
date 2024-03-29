@@ -30,7 +30,7 @@ final class DismissTest extends \PHPUnit\Framework\TestCase
             HTML,
             Alert::widget()
                 ->content('<strong>Holy guacamole!</strong> You should check in on some of those fields below.')
-                ->definition('dismissible', 'danger')
+                ->cookbook('dismissible', 'danger')
                 ->id('alert_658fec01ac6cf')
                 ->render()
         );
@@ -47,7 +47,7 @@ final class DismissTest extends \PHPUnit\Framework\TestCase
             HTML,
             Alert::widget()
                 ->content('<strong>Holy guacamole!</strong> You should check in on some of those fields below.')
-                ->definition('dismissible', 'dark')
+                ->cookbook('dismissible', 'dark')
                 ->id('alert_658fec01ac6cf')
                 ->render()
         );
@@ -64,7 +64,7 @@ final class DismissTest extends \PHPUnit\Framework\TestCase
             HTML,
             Alert::widget()
                 ->content('<strong>Holy guacamole!</strong> You should check in on some of those fields below.')
-                ->definition('dismissible', 'info')
+                ->cookbook('dismissible', 'info')
                 ->id('alert_658fec01ac6cf')
                 ->render()
         );
@@ -81,7 +81,7 @@ final class DismissTest extends \PHPUnit\Framework\TestCase
             HTML,
             Alert::widget()
                 ->content('<strong>Holy guacamole!</strong> You should check in on some of those fields below.')
-                ->definition('dismissible', 'light')
+                ->cookbook('dismissible', 'light')
                 ->id('alert_658fec01ac6cf')
                 ->render()
         );
@@ -98,7 +98,7 @@ final class DismissTest extends \PHPUnit\Framework\TestCase
             HTML,
             Alert::widget()
                 ->content('<strong>Holy guacamole!</strong> You should check in on some of those fields below.')
-                ->definition('dismissible', 'primary')
+                ->cookbook('dismissible', 'primary')
                 ->id('alert_658fec01ac6cf')
                 ->render()
         );
@@ -115,7 +115,7 @@ final class DismissTest extends \PHPUnit\Framework\TestCase
             HTML,
             Alert::widget()
                 ->content('<strong>Holy guacamole!</strong> You should check in on some of those fields below.')
-                ->definition('dismissible', 'secondary')
+                ->cookbook('dismissible', 'secondary')
                 ->id('alert_658fec01ac6cf')
                 ->render()
         );
@@ -132,7 +132,7 @@ final class DismissTest extends \PHPUnit\Framework\TestCase
             HTML,
             Alert::widget()
                 ->content('<strong>Holy guacamole!</strong> You should check in on some of those fields below.')
-                ->definition('dismissible', 'success')
+                ->cookbook('dismissible', 'success')
                 ->id('alert_658fec01ac6cf')
                 ->render()
         );
@@ -149,7 +149,7 @@ final class DismissTest extends \PHPUnit\Framework\TestCase
             HTML,
             Alert::widget()
                 ->content('<strong>Holy guacamole!</strong> You should check in on some of those fields below.')
-                ->definition('dismissible', 'warning')
+                ->cookbook('dismissible', 'warning')
                 ->id('alert_658fec01ac6cf')
                 ->render()
         );

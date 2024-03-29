@@ -19,8 +19,6 @@ final class Defaults
      * Define the dropdown definition.
      *
      * @return array The dropdown definition.
-     *
-     * @psalm-return array<string, mixed> The dropdown definition.
      */
     public static function definition(): array
     {
@@ -28,7 +26,7 @@ final class Defaults
             'containerClass()' => ['dropdown'],
             'linkClass()' => ['dropdown-item'],
             'listClass()' => ['dropdown-menu'],
-            'toggle()' => [Toggle::widget()->definition('dropdown')],
+            'toggle()' => [Toggle::widget()->cookbook('dropdown')],
         ];
     }
 }

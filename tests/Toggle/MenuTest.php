@@ -17,7 +17,7 @@ final class MenuTest extends \PHPUnit\Framework\TestCase
             <span class="navbar-toggler-icon"></span>
             </button>
             HTML,
-            Toggle::widget()->definition('menu')->render()
+            Toggle::widget()->cookbook('menu')->render()
         );
     }
 }

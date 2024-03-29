@@ -19,8 +19,6 @@ final class Defaults
      * Define the navbar definition.
      *
      * @return array The navbar definition.
-     *
-     * @psalm-return array<string, mixed> The navbar definition.
      */
     public static function definition(): array
     {
@@ -37,7 +35,7 @@ final class Defaults
                             'linkClass()' => ['dropdown-item'],
                             'listClass()' => ['dropdown-menu'],
                             'tag()' => [false],
-                            'toggle()' => [Toggle::widget()->definition('menu-dropdown')],
+                            'toggle()' => [Toggle::widget()->cookbook('menu-dropdown')],
                         ],
                     ],
                     'linkActiveClass()' => ['active'],
@@ -47,7 +45,7 @@ final class Defaults
                     'listClass()' => ['navbar-nav me-auto mb-2 mb-lg-0'],
                     'listDropdownItemClass()' => ['nav-item dropdown'],
                     'listItemClass()' => ['nav-item'],
-                    'toggle()' => [Toggle::widget()->definition('menu')],
+                    'toggle()' => [Toggle::widget()->cookbook('menu')],
                 ],
             ],
         ];

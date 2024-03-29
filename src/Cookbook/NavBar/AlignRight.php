@@ -17,8 +17,6 @@ final class AlignRight
      * Define the navbar with menu items on the right definition.
      *
      * @return array The navbar with menu items on the right definition.
-     *
-     * @psalm-return array<string, mixed> The navbar with menu items on the right definition.
      */
     public static function definition(): array
     {
@@ -35,7 +33,7 @@ final class AlignRight
                             'linkClass()' => ['dropdown-item'],
                             'listClass()' => ['dropdown-menu'],
                             'tag()' => [false],
-                            'toggle()' => [Toggle::widget()->definition('menu-dropdown')],
+                            'toggle()' => [Toggle::widget()->cookbook('menu-dropdown')],
                         ],
                     ],
                     'linkActiveClass()' => ['active'],
@@ -45,7 +43,7 @@ final class AlignRight
                     'listClass()' => ['navbar-nav'],
                     'listDropdownItemClass()' => ['nav-item dropdown'],
                     'listItemClass()' => ['nav-item'],
-                    'toggle()' => [Toggle::widget()->definition('menu')],
+                    'toggle()' => [Toggle::widget()->cookbook('menu')],
                 ],
             ],
         ];
