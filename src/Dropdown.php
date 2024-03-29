@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace UIAwesome\Html\Component\Bootstrap5;
 
-use PHPForge\Widget\Factory\SimpleFactory;
 use UIAwesome\Html\{
     Component\Bootstrap5\Cookbook\Dropdown\Defaults,
     Component\Bootstrap5\Cookbook\Dropdown\Language,

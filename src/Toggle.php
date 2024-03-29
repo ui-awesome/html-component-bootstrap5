@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace UIAwesome\Html\Component\Bootstrap5;
 
-use PHPForge\Widget\Factory\SimpleFactory;
 use UIAwesome\Html\{
     Component\Bootstrap5\Cookbook\Toggle\Alert,
     Component\Bootstrap5\Cookbook\Toggle\Dropdown,
@@ -14,8 +13,6 @@ use UIAwesome\Html\{
     Component\Bootstrap5\Cookbook\Toggle\SelectorTheme,
     Core\Component\AbstractToggle
 };
-
-use function sprintf;
 
 /**
  * The `Toggle` component is a simple `HTML` component that can be used to create a toggle button.
